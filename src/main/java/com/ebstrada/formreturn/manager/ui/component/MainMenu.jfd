@@ -1,0 +1,2547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_65" class="java.beans.XMLDecoder">
+ <object class="com.jformdesigner.model.FormModel">
+  <void property="contentType">
+   <string>form/swing</string>
+  </void>
+  <void property="root">
+   <object class="com.jformdesigner.model.FormRoot">
+    <void method="add">
+     <object class="com.jformdesigner.model.FormContainer">
+      <string>javax.swing.JMenuBar</string>
+      <object class="com.jformdesigner.model.FormLayoutManager">
+       <class>javax.swing.JMenuBar</class>
+      </object>
+      <void method="setProperty">
+       <string>border</string>
+       <object class="javax.swing.border.CompoundBorder">
+        <object class="javax.swing.border.MatteBorder">
+         <int>0</int>
+         <int>0</int>
+         <int>1</int>
+         <int>0</int>
+         <object class="java.awt.Color" field="gray"/>
+        </object>
+        <object class="javax.swing.border.EmptyBorder">
+         <int>0</int>
+         <int>0</int>
+         <int>1</int>
+         <int>0</int>
+        </object>
+       </object>
+      </void>
+      <void method="setProperty">
+       <string>font</string>
+       <object class="com.jformdesigner.model.SwingFont">
+        <string>MenuBar.font</string>
+       </object>
+      </void>
+      <void method="auxiliary">
+       <void method="setProperty">
+        <string>JavaCodeGenerator.variableGetter</string>
+        <boolean>true</boolean>
+       </void>
+      </void>
+      <void property="name">
+       <string>menuBar</string>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JMenu</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JMenu</class>
+        </object>
+        <void method="setProperty">
+         <string>text</string>
+         <string>File</string>
+        </void>
+        <void method="setProperty">
+         <string>icon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>selectedIcon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>font</string>
+         <object class="com.jformdesigner.model.SwingFont" id="SwingFont0">
+          <string>Menu.font</string>
+         </object>
+        </void>
+        <void method="auxiliary">
+         <void method="setProperty">
+          <string>text.noCode</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>JavaCodeGenerator.postInitCode</string>
+          <string>fileMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;FileMenu&quot;));</string>
+         </void>
+        </void>
+        <void property="name">
+         <string>fileMenu</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Create a New Form...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/page_white_add.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>78</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont" id="SwingFont1">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void property="name">
+           <string>newFormItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>newFormItem.setText(Localizer.localize(&quot;UI&quot;, &quot;NewFormMenuItem&quot;));
+newFormItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;NewFormShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>createNewForm</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Create a New Segment...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/page_white_width.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>69</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>newSegmentItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>newSegmentItem.setText(Localizer.localize(&quot;UI&quot;, &quot;NewSegmentMenuItem&quot;));
+newSegmentItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;NewSegmentShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>createNewSegment</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator4</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Source Data...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/database.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>68</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>sourceDataManagerItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>sourceDataManagerItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SourceDataMenuItem&quot;));
+sourceDataManagerItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SourceDataShortcut&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>sourceDataManagerActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator5</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Processing Queue...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/clock.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>71</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>processingQueueMenuItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>processingQueueMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;ProcessingQueueMenuItem&quot;));
+processingQueueMenuItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;ProcessingQueueShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>processingQueueMenuItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator2</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Captured Data...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/chart_bar.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>82</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>capturedDataManagerItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>capturedDataManagerItem.setText(Localizer.localize(&quot;UI&quot;, &quot;CapturedDataManagerMenuItem&quot;));
+capturedDataManagerItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;CapturedDataManagerShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>capturedDataManagerItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator6</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Open...</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>79</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/folder_page_white.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>openItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>openItem.setText(Localizer.localize(&quot;UI&quot;, &quot;OpenMenuItem&quot;));
+openItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;OpenShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>openItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JMenu</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>javax.swing.JMenu</class>
+          </object>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Open Recent</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/folder_go.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont">
+            <string>Menu.font</string>
+           </object>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.variableGetter</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>openRecentSubMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;OpenRecentSubMenu&quot;));</string>
+           </void>
+          </void>
+          <void property="name">
+           <string>openRecentSubMenu</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>fileMenuSeparator1</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Upload Image...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/images.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont" id="SwingFont2">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>73</int>
+            <int>4226</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void property="name">
+           <string>uploadImageItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>uploadImageItem.setText(Localizer.localize(&quot;UI&quot;, &quot;UploadImageMenuItem&quot;));
+uploadImageItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;UploadImageShortcut&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>uploadImageItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Upload Image Folder...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/folder_image.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont2"/>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>73</int>
+            <int>4291</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void property="name">
+           <string>uploadImageFolderItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>uploadImageFolderItem.setText(Localizer.localize(&quot;UI&quot;, &quot;UploadImageFolderMenuItem&quot;));
+uploadImageFolderItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;UploadImageFolderShortcut&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>uploadImageFolderItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator3</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Close</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>87</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/eclipse/close.gif</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>closeItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>closeItem.setText(Localizer.localize(&quot;UI&quot;, &quot;CloseMenuItem&quot;));
+closeItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;CloseShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>closeItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Close All</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>87</int>
+            <int>4876</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/eclipse/closeall.gif</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>closeAllItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>closeAllItem.setText(Localizer.localize(&quot;UI&quot;, &quot;CloseAllMenuItem&quot;));
+closeAllItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;CloseAllShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>closeAllItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>fileMenuSeparator2</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Save</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>83</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/disk.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>saveItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>saveItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SaveMenuItem&quot;));
+saveItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SaveShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>saveItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Save As...</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>83</int>
+            <int>4421</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/disk_multiple.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>saveAsItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>saveAsItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SaveAsMenuItem&quot;));
+saveAsItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SaveAsShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>saveAsItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>fileMenuSeparator3</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Preferences...</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>80</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/cog.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>preferencesItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>preferencesItem.setText(Localizer.localize(&quot;UI&quot;, &quot;PreferencesMenuItem&quot;));
+preferencesItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;PreferencesShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>preferencesItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Quit</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>81</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/door_in.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont1"/>
+          </void>
+          <void property="name">
+           <string>quitItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>quitItem.setText(Localizer.localize(&quot;UI&quot;, &quot;QuitMenuItem&quot;));
+quitItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;QuitShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>quitItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JMenu</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JMenu</class>
+        </object>
+        <void method="setProperty">
+         <string>text</string>
+         <string>Edit</string>
+        </void>
+        <void method="setProperty">
+         <string>icon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>selectedIcon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>font</string>
+         <object idref="SwingFont0"/>
+        </void>
+        <void method="auxiliary">
+         <void method="setProperty">
+          <string>text.noCode</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>JavaCodeGenerator.postInitCode</string>
+          <string>editMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;EditMenu&quot;));</string>
+         </void>
+        </void>
+        <void property="name">
+         <string>editMenu</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Undo</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>90</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/arrow_undo.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont" id="SwingFont3">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void property="name">
+           <string>undoItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>undoItem = editMenu.add(new UndoAction(&quot;Undo&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>undoItem.setText(Localizer.localize(&quot;UI&quot;, &quot;UndoMenuItem&quot;));
+undoItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;UndoShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Redo</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>89</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/arrow_redo.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>redoItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>redoItem = editMenu.add(new RedoAction(&quot;Redo&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>redoItem.setText(Localizer.localize(&quot;UI&quot;, &quot;RedoMenuItem&quot;));
+redoItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;RedoShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator7</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Select All</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>65</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>selectAllItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>selectAllItem = editMenu.add(new SelectAllAction());</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>selectAllItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SelectAllMenuItem&quot;));
+selectAllItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SelectAllShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Select Invert</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>65</int>
+            <int>4421</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>selectInvertItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>selectInvertItem = editMenu.add(new SelectInvertAction());</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>selectInvertItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SelectInvertMenuItem&quot;));
+selectInvertItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SelectInvertShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Select Next</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>46</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>selectNextItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>selectNextItem = editMenu.add(new SelectNextAction());</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>selectNextItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SelectNextMenuItem&quot;));
+selectNextItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SelectNextShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>editMenuSeparator1</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Cut</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>88</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/cut.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>cutItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>cutItem = editMenu.add(new CutAction(&quot;Cut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>cutItem.setText(Localizer.localize(&quot;UI&quot;, &quot;CutMenuItem&quot;));
+cutItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;CutShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Copy</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>67</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/page_white_copy.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>copyItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>copyItem = editMenu.add(new CopyAction());</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>copyItem.setText(Localizer.localize(&quot;UI&quot;, &quot;CopyMenuItem&quot;));
+copyItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;CopyShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Paste</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>86</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/paste_plain.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>pasteItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>pasteItem = editMenu.add(new PasteAction(&quot;Paste&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>pasteItem.setText(Localizer.localize(&quot;UI&quot;, &quot;PasteMenuItem&quot;));
+pasteItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;PasteShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator8</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JCheckBoxMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Snap To Grid</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>73</int>
+            <int>260</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>snapToGridCheckBoxMenuItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>snapToGridCheckBoxMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;SnapToGridCheckBoxMenuItem&quot;));
+snapToGridCheckBoxMenuItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;SnapToGridShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>snapToGridCheckBoxMenuItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JCheckBoxMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Show Grid</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>73</int>
+            <int>780</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>showGridCheckBoxMenuItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>showGridCheckBoxMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;ShowGridCheckBoxMenuItem&quot;));
+showGridCheckBoxMenuItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;ShowGridShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>showGridCheckBoxMenuItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Adjust Grid Size...</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>73</int>
+            <int>325</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>adjustGridSizeMenuItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>adjustGridSizeMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AdjustGridSizeMenuItem&quot;));
+adjustGridSizeMenuItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;AdjustGridSizeShortcut&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>adjustGridSizeMenuItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator12</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Duplicate</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/mainmenu/duplicate.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>85</int>
+            <int>4356</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>duplicateItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>duplicateItem = editMenu.add(new DuplicateAction(&quot;Duplicate&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>duplicateItem.setText(Localizer.localize(&quot;UI&quot;, &quot;DuplicateMenuItem&quot;));
+duplicateItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;DuplicateShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator1</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Delete</string>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>8</int>
+            <int>0</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/cross.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont3"/>
+          </void>
+          <void property="name">
+           <string>deleteItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>deleteItem = editMenu.add(new DeleteFromModelAction(&quot;Delete&quot;));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>deleteItem.setText(Localizer.localize(&quot;UI&quot;, &quot;DeleteMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JMenu</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JMenu</class>
+        </object>
+        <void method="setProperty">
+         <string>text</string>
+         <string>Object</string>
+        </void>
+        <void method="setProperty">
+         <string>font</string>
+         <object idref="SwingFont0"/>
+        </void>
+        <void method="auxiliary">
+         <void method="setProperty">
+          <string>text.noCode</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>JavaCodeGenerator.postInitCode</string>
+          <string>objectMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;ObjectMenu&quot;));</string>
+         </void>
+        </void>
+        <void property="name">
+         <string>objectMenu</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Forward</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/Forward.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont" id="SwingFont4">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void property="name">
+           <string>forwardItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>forwardItem = objectMenu.add(new ReorderAction(&quot;Forward&quot;, ReorderAction.BRING_FORWARD));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>forwardItem.setText(Localizer.localize(&quot;UI&quot;, &quot;ForwardMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Backward</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/Backward.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>backwardItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>backwardItem = objectMenu.add(new ReorderAction(&quot;Backward&quot;, ReorderAction.SEND_BACKWARD));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>backwardItem.setText(Localizer.localize(&quot;UI&quot;, &quot;BackwardMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>To Front</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/ToFront.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>toFrontItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>toFrontItem = objectMenu.add(new ReorderAction(&quot;To Front&quot;, ReorderAction.BRING_TO_FRONT));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>toFrontItem.setText(Localizer.localize(&quot;UI&quot;, &quot;ToFrontMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>To Back</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/ToBack.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>toBackItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>toBackItem = objectMenu.add(new ReorderAction(&quot;To Back&quot;, ReorderAction.SEND_TO_BACK));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>toBackItem.setText(Localizer.localize(&quot;UI&quot;, &quot;ToBackMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator9</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Top</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignTops.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignTopsItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignTopsItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_TOPS));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignTopsItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignTopsMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Bottom</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignBottoms.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignBottomsItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignBottomsItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_BOTTOMS));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignBottomsItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignBottomsMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Left</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignLefts.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignLeftItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignLeftItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_LEFTS));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignLeftItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignLeftMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Right</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignRights.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignRightItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignRightItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_RIGHTS));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignRightItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignRightMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator10</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Horizontal Centers</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignHorizontalCenters.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>59</int>
+            <int>260</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignHorizontalCentersItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignHorizontalCentersItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_H_CENTERS));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignHorizontalCentersItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignHorizontalCentersMenuItem&quot;));
+alignHorizontalCentersItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;AlignHorizontalCentersShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Align Vertical Centers</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/AlignVerticalCenters.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>222</int>
+            <int>260</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>alignVerticalCentersItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>alignVerticalCentersItem = objectMenu.add(new AlignAction(AlignAction.ALIGN_V_CENTERS));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>alignVerticalCentersItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AlignVerticalCentersMenuItem&quot;));
+alignVerticalCentersItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;AlignVerticalCentersShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>separator11</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Distribute Horizontal Spacing</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/DistributeHorizontalSpacing.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>91</int>
+            <int>260</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>distributeHorizontalSpacingItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>distributeHorizontalSpacingItem = objectMenu.add(new DistributeAction(DistributeAction.H_SPACING));</string>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>distributeHorizontalSpacingItem.setText(Localizer.localize(&quot;UI&quot;, &quot;DistributeHorizontalSpacingMenuItem&quot;));
+distributeHorizontalSpacingItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;DistributeHorizontalSpacingShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Distribute Vertical Spacing</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/gef/Images/DistributeVerticalSpacing.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>accelerator</string>
+           <object class="javax.swing.KeyStroke" method="getKeyStroke">
+            <int>93</int>
+            <int>260</int>
+            <boolean>false</boolean>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont4"/>
+          </void>
+          <void property="name">
+           <string>distributeVerticalSpacingItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>JavaCodeGenerator.preInitCode</string>
+            <string>distributeVerticalSpacingItem = objectMenu.add(new DistributeAction(DistributeAction.V_SPACING));</string>
+           </void>
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>accelerator.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>distributeVerticalSpacingItem.setText(Localizer.localize(&quot;UI&quot;, &quot;DistributeVerticalSpacingItemMenuItem&quot;));
+distributeVerticalSpacingItem.setAccelerator(Localizer.getShortcut(&quot;UI&quot;, &quot;DistributeVerticalSpacingItemShortcut&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JMenu</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JMenu</class>
+        </object>
+        <void method="setProperty">
+         <string>text</string>
+         <string>View</string>
+        </void>
+        <void method="setProperty">
+         <string>icon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>selectedIcon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>font</string>
+         <object idref="SwingFont0"/>
+        </void>
+        <void method="auxiliary">
+         <void method="setProperty">
+          <string>text.noCode</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>JavaCodeGenerator.postInitCode</string>
+          <string>viewMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;ViewMenu&quot;));</string>
+         </void>
+        </void>
+        <void property="name">
+         <string>viewMenu</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JMenu</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>javax.swing.JMenu</class>
+          </object>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Toolbars</string>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont">
+            <string>Menu.font</string>
+           </object>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>toolbarsMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;ToolbarsSubMenu&quot;));</string>
+           </void>
+          </void>
+          <void property="name">
+           <string>toolbarsMenu</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormComponent">
+            <string>javax.swing.JCheckBoxMenuItem</string>
+            <void method="setProperty">
+             <string>text</string>
+             <string>Quick Launcher</string>
+            </void>
+            <void method="setProperty">
+             <string>font</string>
+             <object class="com.jformdesigner.model.SwingFont">
+              <string>MenuItem.font</string>
+             </object>
+            </void>
+            <void property="name">
+             <string>quickLauncherCheckBoxMenuItem</string>
+            </void>
+            <void method="auxiliary">
+             <void method="setProperty">
+              <string>text.noCode</string>
+              <boolean>true</boolean>
+             </void>
+             <void method="setProperty">
+              <string>JavaCodeGenerator.postInitCode</string>
+              <string>quickLauncherCheckBoxMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;QuickLauncherCheckBoxMenuItem&quot;));</string>
+             </void>
+            </void>
+            <void method="addEvent">
+             <object class="com.jformdesigner.model.FormEvent">
+              <string>java.awt.event.ActionListener</string>
+              <string>actionPerformed</string>
+              <string>quickLauncherCheckBoxMenuItemActionPerformed</string>
+              <boolean>true</boolean>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JCheckBoxMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Status Bar</string>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void property="name">
+           <string>statusBarCheckBoxMenuItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>statusBarCheckBoxMenuItem.setText(Localizer.localize(&quot;UI&quot;, &quot;StatusBarCheckBoxMenuItem&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>statusBarCheckBoxMenuItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JMenu</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JMenu</class>
+        </object>
+        <void method="setProperty">
+         <string>text</string>
+         <string>Help</string>
+        </void>
+        <void method="setProperty">
+         <string>icon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>selectedIcon</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void method="setProperty">
+         <string>font</string>
+         <object idref="SwingFont0"/>
+        </void>
+        <void method="auxiliary">
+         <void method="setProperty">
+          <string>text.noCode</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>JavaCodeGenerator.postInitCode</string>
+          <string>helpMenu.setText(Localizer.localize(&quot;UI&quot;, &quot;HelpMenu&quot;));</string>
+         </void>
+        </void>
+        <void property="name">
+         <string>helpMenu</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>About FormReturn...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/frmanager_16x16.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object class="com.jformdesigner.model.SwingFont" id="SwingFont5">
+            <string>MenuItem.font</string>
+           </object>
+          </void>
+          <void property="name">
+           <string>aboutItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>aboutItem.setText(Localizer.localize(&quot;UI&quot;, &quot;AboutMenuItem&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>aboutItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/help.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont5"/>
+          </void>
+          <void property="name">
+           <string>helpContentsItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>helpContentsItem.setText(Localizer.localize(&quot;UI&quot;, &quot;HelpContentsMenuItem&quot;));</string>
+           </void>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JPopupMenu$Separator</string>
+          <void property="name">
+           <string>helpMenuSeparator1</string>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>Register...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/key_add.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont5"/>
+          </void>
+          <void property="name">
+           <string>registerItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>registerItem.setText(Localizer.localize(&quot;UI&quot;, &quot;RegisterMenuItem&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormComponent">
+          <string>javax.swing.JMenuItem</string>
+          <void method="setProperty">
+           <string>text</string>
+           <string>License...</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/application_key.png</string>
+           </object>
+          </void>
+          <void method="setProperty">
+           <string>font</string>
+           <object idref="SwingFont5"/>
+          </void>
+          <void property="name">
+           <string>licenseItem</string>
+          </void>
+          <void method="auxiliary">
+           <void method="setProperty">
+            <string>text.noCode</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>JavaCodeGenerator.postInitCode</string>
+            <string>licenseItem.setText(Localizer.localize(&quot;UI&quot;, &quot;LicenseMenuItem&quot;));</string>
+           </void>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ActionListener</string>
+            <string>actionPerformed</string>
+            <string>licenseItemActionPerformed</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+     <object class="com.jformdesigner.model.FormLayoutConstraints">
+      <null/>
+      <void method="setProperty">
+       <string>location</string>
+       <object class="java.awt.Point">
+        <int>0</int>
+        <int>0</int>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

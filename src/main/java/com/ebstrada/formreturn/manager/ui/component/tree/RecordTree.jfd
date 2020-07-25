@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_17" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormComponent"> 
+      <string>javax.swing.JTree</string> 
+      <void method="setProperty"> 
+       <string>showsRootHandles</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+      <void method="addEvent"> 
+       <object class="com.jformdesigner.model.FormEvent"> 
+        <string>javax.swing.event.TreeExpansionListener</string> 
+        <string>treeExpanded</string> 
+        <string>thisTreeExpanded</string> 
+        <boolean>true</boolean> 
+       </object> 
+      </void> 
+      <void method="addEvent"> 
+       <object class="com.jformdesigner.model.FormEvent"> 
+        <string>javax.swing.event.TreeExpansionListener</string> 
+        <string>treeCollapsed</string> 
+        <string>thisTreeCollapsed</string> 
+        <boolean>true</boolean> 
+       </object> 
+      </void> 
+      <void method="addEvent"> 
+       <object class="com.jformdesigner.model.FormEvent"> 
+        <string>java.awt.event.MouseListener</string> 
+        <string>mousePressed</string> 
+        <string>thisMousePressed</string> 
+        <boolean>true</boolean> 
+       </object> 
+      </void> 
+      <void method="addEvent"> 
+       <object class="com.jformdesigner.model.FormEvent"> 
+        <string>javax.swing.event.TreeWillExpandListener</string> 
+        <string>treeWillExpand</string> 
+        <string>thisTreeWillExpand</string> 
+        <boolean>true</boolean> 
+       </object> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>0</int> 
+        <int>0</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

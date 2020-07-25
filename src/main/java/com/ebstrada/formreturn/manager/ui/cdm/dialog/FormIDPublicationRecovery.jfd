@@ -1,0 +1,200 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "0:1.0"
+			"$rowSpecs": "0:1.0, 0"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignLeft": true
+			"$alignTop": true
+		} ) {
+			name: "this"
+			"title": "Form ID Publication Recovery"
+			"$sizePolicy": 1
+			"defaultCloseOperation": 2
+			"modalityType": enum java.awt.Dialog$ModalityType APPLICATION_MODAL
+			auxiliary() {
+				"title.noCode": true
+				"JavaCodeGenerator.postInitCode": "setTitle(Localizer.localize(\"UICDM\", \"FormIDPublicationRecoveryDialogTitle\"));"
+			}
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			addEvent( new FormEvent( "java.awt.event.WindowFocusListener", "windowGainedFocus", "thisWindowGainedFocus", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0"
+				"$rowSpecs": "40, 0:1.0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "contentPanel"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 0, 0, 0:1.0"
+					"$rowSpecs": "center:0:1.0"
+					"$hGap": 5
+					"$vGap": 5
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "formIDRecoveryDescriptionPanel"
+					"border": new javax.swing.border.MatteBorder( 0, 0, 3, 0, sfield java.awt.Color gray )
+					"opaque": false
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "formIDRecoveryDescriptionLabel"
+						"text": "<html><body><strong>Reconcile missing Form Page ID barcodes or records with published form page records.</strong></body></html>"
+						"font": &SwingFont0 new com.jformdesigner.model.SwingFont( "Label.font" )
+						auxiliary() {
+							"text.noCode": true
+							"JavaCodeGenerator.postInitCode": "formIDRecoveryDescriptionLabel.setText(\"<html><body><strong>\" + Localizer.localize(\"UICDM\", \"FormIDRecoveryDescriptionLabel\") + \"</strong></body></html>\");"
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+					} )
+					add( new FormComponent( "com.ebstrada.formreturn.manager.ui.component.JHelpLabel" ) {
+						name: "formIDRecoveryDescriptionHelpLabel"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/help.png" )
+						"cursor": new java.awt.Cursor( 12 )
+						"font": new com.jformdesigner.model.SwingFont( "Label.font" )
+						auxiliary() {
+							"JavaCodeGenerator.postInitCode": "formIDRecoveryDescriptionHelpLabel.setHelpGUID(\"form-id-publication-recovery\");\nformIDRecoveryDescriptionHelpLabel.setToolTipText(Localizer.localize(\"UI\", \"ClickHereForHelpToolTip\"));"
+							"toolTipText.noCode": true
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0"
+					"$rowSpecs": "0, 0:1.0, 0, 0"
+					"$hGap": 5
+					"$vGap": 5
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "firstFormPageRecordPanel"
+					"border": new javax.swing.border.CompoundBorder( new javax.swing.border.TitledBorder( "First Form Page Record" ), new javax.swing.border.EmptyBorder( 5, 5, 5, 5 ) )
+					"opaque": false
+					auxiliary() {
+						"border.noCode": true
+						"JavaCodeGenerator.postInitCode": "firstFormPageRecordPanel.setBorder(new CompoundBorder(\n\tnew TitledBorder(Localizer.localize(\"UICDM\", \"FirstFormPageRecordPanel\")),\n\tnew EmptyBorder(5, 5, 5, 5)));"
+					}
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "firstFormPageRecordDescriptionLabel"
+						"text": "Select the first form page you want to associate with the first scanned image, or lowest scanned form page id value."
+						"font": #SwingFont0
+						auxiliary() {
+							"text.noCode": true
+							"JavaCodeGenerator.postInitCode": "firstFormPageRecordDescriptionLabel.setText(Localizer.localize(\"UICDM\", \"FirstFormPageRecordDescriptionLabel\"));"
+						}
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "formPageRecordsScrollPane"
+						"font": new com.jformdesigner.model.SwingFont( "ScrollPane.font" )
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "formPagesTable"
+							"font": new com.jformdesigner.model.SwingFont( "Table.font" )
+							auxiliary() {
+								"JavaCodeGenerator.postInitCode": "formPagesTable.getTableHeader().setFont(UIManager.getFont(\"TableHeader.font\"));"
+							}
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+					} )
+					add( new FormComponent( "com.ebstrada.formreturn.manager.ui.component.TableFilterPanel" ) {
+						name: "formPagesFilterPanel"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0, 0, 120, 0:1.0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+						"$rowSpecs": "0"
+					} ) {
+						name: "firstFormPageIDPanel"
+						"opaque": false
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "firstFormPageIDLabel"
+							"text": "Start Reconciling From Form Page ID:"
+							"font": #SwingFont0
+							auxiliary() {
+								"text.noCode": true
+								"JavaCodeGenerator.postInitCode": "firstFormPageIDLabel.setText(Localizer.localize(\"UICDM\", \"FirstFormPageIDLabel\"));"
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+						} )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "firstFormPageIDSpinner"
+							"model": new javax.swing.SpinnerNumberModel {
+								minimum: 1
+								value: 1
+							}
+							"font": new com.jformdesigner.model.SwingFont( "Spinner.font" )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 3
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0, 0, 0"
+				"$rowSpecs": "0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignLeft": true
+				"$alignTop": true
+			} ) {
+				name: "buttonPanel"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				"opaque": false
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "processButton"
+					"text": "Process"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/accept.png" )
+					"font": &SwingFont1 new com.jformdesigner.model.SwingFont( "Button.font" )
+					auxiliary() {
+						"text.noCode": true
+						"JavaCodeGenerator.postInitCode": "processButton.setText(Localizer.localize(\"UICDM\", \"ProcessButtonText\"));"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "processButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "cancelButton"
+					"text": "Cancel"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/cross.png" )
+					"font": #SwingFont1
+					auxiliary() {
+						"text.noCode": true
+						"JavaCodeGenerator.postInitCode": "cancelButton.setText(Localizer.localize(\"UICDM\", \"CancelButtonText\"));"
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 850, 650 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "methodButtonGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 575 )
+		} )
+	}
+}

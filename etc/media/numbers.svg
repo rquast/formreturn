@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="numbers.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/three.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="-37.277058"
+     inkscape:cy="-16.99737"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1045"
+     inkscape:window-height="701"
+     inkscape:window-x="132"
+     inkscape:window-y="75" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3168"
+       width="16"
+       height="16"
+       x="-40"
+       y="30.75"
+       inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/three.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g3170"
+       transform="translate(10.71145,-3.4614499)">
+      <path
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/one.png"
+         transform="matrix(0.7799333,0,0,0.79774,-37.48895,3.5496651)"
+         d="M 15.318618,7.7240515 A 7.2698526,7.1075792 0 1 1 0.77891254,7.7240515 A 7.2698526,7.1075792 0 1 1 15.318618,7.7240515 z"
+         sodipodi:ry="7.1075792"
+         sodipodi:rx="7.2698526"
+         sodipodi:cy="7.7240515"
+         sodipodi:cx="8.0487652"
+         id="path2385"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.02689397;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/one.png"
+         id="text3157"
+         y="12.53835"
+         x="-33.557743"
+         style="font-size:32.40000153px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:8.10000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Frutiger LT 87 ExtraBlackCn;-inkscape-font-specification:Frutiger LT 87 ExtraBlackCn"
+           y="12.53835"
+           x="-33.557743"
+           id="tspan3159"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <g
+       id="g3175"
+       transform="translate(-33.007459,21.761617)">
+      <path
+         inkscape:export-ydpi="96.000015"
+         inkscape:export-xdpi="96.000015"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/two.png"
+         transform="matrix(0.7799333,0,0,0.79774,22.729959,1.5765978)"
+         d="M 15.318618,7.7240515 A 7.2698526,7.1075792 0 1 1 0.77891254,7.7240515 A 7.2698526,7.1075792 0 1 1 15.318618,7.7240515 z"
+         sodipodi:ry="7.1075792"
+         sodipodi:rx="7.2698526"
+         sodipodi:cy="7.7240515"
+         sodipodi:cx="8.0487652"
+         id="path3161"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.02689397;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="96.000015"
+         inkscape:export-xdpi="96.000015"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/two.png"
+         id="text3163"
+         y="10.613883"
+         x="26.901459"
+         style="font-size:32.40000153px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:8.10000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Frutiger LT 87 ExtraBlackCn;-inkscape-font-specification:Frutiger LT 87 ExtraBlackCn"
+           y="10.613883"
+           x="26.901459"
+           id="tspan3165"
+           sodipodi:role="line">2</tspan></text>
+    </g>
+    <g
+       id="g3180"
+       transform="translate(-21.19105,-17.822146)">
+      <path
+         inkscape:export-ydpi="95.999985"
+         inkscape:export-xdpi="95.999985"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/three.png"
+         transform="matrix(0.7799333,0,0,0.79774,22.91355,19.660361)"
+         d="M 15.318618,7.7240515 A 7.2698526,7.1075792 0 1 1 0.77891254,7.7240515 A 7.2698526,7.1075792 0 1 1 15.318618,7.7240515 z"
+         sodipodi:ry="7.1075792"
+         sodipodi:rx="7.2698526"
+         sodipodi:cy="7.7240515"
+         sodipodi:cx="8.0487652"
+         id="path3167"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.02689397;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="95.999985"
+         inkscape:export-xdpi="95.999985"
+         inkscape:export-filename="/Users/rquast/Desktop/SVN/frmanager2/src/com/ebstrada/formreturn/manager/ui/icons/three.png"
+         id="text3169"
+         y="28.649044"
+         x="27.085049"
+         style="font-size:32.40000153px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           style="font-size:8.10000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;font-family:Frutiger LT 87 ExtraBlackCn;-inkscape-font-specification:Frutiger LT 87 ExtraBlackCn"
+           y="28.649044"
+           x="27.085049"
+           id="tspan3171"
+           sodipodi:role="line">3</tspan></text>
+    </g>
+  </g>
+</svg>

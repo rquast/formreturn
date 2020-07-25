@@ -1,0 +1,55 @@
+Third party libraries included with the software are:
+  ant-launcher under Apache License, Version 2.0
+  Apache Derby Client JDBC Driver under Apache 2
+  Apache Derby Database Engine and Embedded JDBC Driver under Apache 2
+  Apache Derby Network Server under Apache 2
+  Apache FontBox under The Apache Software License, Version 2.0
+  Apache FOP under The Apache Software License, Version 2.0
+  Apache Geronimo JSR-317 JPA 2.0 Spec API under The Apache Software License, Version 2.0
+  Apache JempBox under The Apache Software License, Version 2.0
+  Apache Log4j under The Apache Software License, Version 2.0
+  Apache PDFBox under The Apache Software License, Version 2.0
+  Apache XML Graphics Commons under The Apache Software License, Version 2.0
+  ASM Core under BSD
+  avalon-framework-api under Apache License, Version 2.0
+  avalon-framework-impl under Apache License, Version 2.0
+  Barcode4J under The Apache Software License, Version 2.0
+  Batik CSS engine under The Apache Software License, Version 2.0
+  Batik SVG DOM implementation under The Apache Software License, Version 2.0
+  CLI under Apache License, Version 2.0
+  colt under Apache License, Version 2.0
+  Commons Codec under The Apache Software License, Version 2.0
+  Commons Collections under The Apache Software License, Version 2.0
+  Commons Daemon under The Apache Software License, Version 2.0
+  Commons DBCP under The Apache Software License, Version 2.0
+  Commons IO under The Apache Software License, Version 2.0
+  Commons Lang under The Apache Software License, Version 2.0
+  Commons Logging under The Apache Software License, Version 2.0
+  Commons Pool under The Apache Software License, Version 2.0
+  Dough Lea's util.concurrent package under Public domain, Sun Microsoystems
+  Hamcrest Core under BSD style
+  ImageJ under Public Domain
+  JHLabs Image Processing Filters under Apache License, Version 2.0
+  JMS 1.1 under The Apache Software License, Version 2.0
+  JTA 1.1 under The Apache Software License, Version 2.0
+  JUnit under Common Public License Version 1.0
+  MXP1: Xml Pull Parser 3rd Edition (XPP3) under Indiana University Extreme! Lab Software License, version 1.1.1 or Public Domain
+  net.xeoh.jspf:jspf-core under BSD license
+  non_com.media:jai-codec under BSD license
+  opencsv under Apache 2
+  OpenJPA Aggregate Jar under Apache Software License 2.0
+  org.apache.batik:batik-all under Apache License, Version 2.0
+  org.apache.tools.ant under Apache License, Version 2.0
+  Quartz Enterprise Job Scheduler under Apache 2.0
+  Serp under BSD
+  SLF4J API Module under MIT License
+  SLF4J LOG4J-12 Binding under MIT License
+  Streaming API for XML under GNU General Public Library or COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+  Swing Layout Extensions under Lesser General Public License (LGPL)
+  SwingX under Lesser General Public License (LGPL)
+  uk.co.mmscomputing:uk.co.mmscomputing.device.twain under Apache License, Version 2.0
+  XML Commons External Components XML APIs under The Apache Software License, Version 2.0
+  XML Commons External Components XML APIs Extensions under The Apache Software License, Version 2.0
+  XML Pull Parsing API under Public Domain
+  XStream Core under BSD style
+  Icons from the famfamfam silk icon set: http://www.famfamfam.com/lab/icons/silk/

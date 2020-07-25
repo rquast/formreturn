@@ -1,0 +1,102 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_65" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"$sizePolicy": 1
+			"$locationPolicy": 0
+			"modal": true
+			"resizable": false
+			auxiliary() {
+				"JavaCodeGenerator.postInitCode": "setTitle(Localizer.localize(\"UI\", \"MultiFormPageImageUploadDialogTitle\"));"
+			}
+			addEvent( new FormEvent( "java.awt.event.WindowFocusListener", "windowGainedFocus", "thisWindowGainedFocus", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "center:0:1.0"
+					"$rowSpecs": "center:0:1.0"
+					"$hGap": 5
+					"$vGap": 5
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0, 90"
+						"$rowSpecs": "0:1.0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "startPagePanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "startPageLabel"
+							"text": "Start From Page:"
+							"font": new com.jformdesigner.model.SwingFont( "Label.font" )
+							auxiliary() {
+								"JavaCodeGenerator.postInitCode": "startPageLabel.setText(Localizer.localize(\"UI\", \"StartPageLabelText\"));"
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "startPageSpinner"
+							"font": new com.jformdesigner.model.SwingFont( "Spinner.font" )
+							"model": new javax.swing.SpinnerNumberModel( 1, 0, 999, 1 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/accept.png" )
+						"font": &SwingFont0 new com.jformdesigner.model.SwingFont( "Button.font" )
+						auxiliary() {
+							"JavaCodeGenerator.postInitCode": "okButton.setText(Localizer.localize(\"UI\", \"OKButtonText\"));"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "okButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "Cancel"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/cross.png" )
+						"font": #SwingFont0
+						auxiliary() {
+							"JavaCodeGenerator.postInitCode": "cancelButton.setText(Localizer.localize(\"UI\", \"CancelButtonText\"));"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 370, 120 )
+		} )
+	}
+}

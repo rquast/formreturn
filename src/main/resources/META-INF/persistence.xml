@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" 
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+                                 http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">     
+	<persistence-unit name="frm-persistence" transaction-type="RESOURCE_LOCAL">
+		<provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>	
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.IncomingImage</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.ProcessedImage</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.Log</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.Publication</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.PublicationXSL</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.PublicationJAR</class>		
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.DataSet</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.Form</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.FormPage</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.FragmentImageZone</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.FragmentOcr</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.FragmentOmr</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.FragmentBarcode</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.QueryProfile</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.Record</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.Segment</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.SourceField</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.SourceImage</class>
+		<class>com.ebstrada.formreturn.manager.persistence.jpa.SourceText</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.CheckBox</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.Grading</class>
+        <class>com.ebstrada.formreturn.manager.persistence.jpa.GradingRule</class>                
+		<properties>
+			<property name="openjpa.Log" value="DefaultLevel=WARN, Runtime=ERROR, Tool=ERROR"/>
+			<property name="openjpa.DynamicEnhancementAgent" value="true"/>
+			<property name="openjpa.jdbc.TransactionIsolation" value="read-uncommitted" />
+		</properties>
+	</persistence-unit>
+</persistence>

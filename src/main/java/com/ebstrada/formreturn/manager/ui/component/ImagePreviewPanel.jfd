@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_73" class="java.beans.XMLDecoder">
+ <object class="com.jformdesigner.model.FormModel">
+  <void property="contentType">
+   <string>form/swing</string>
+  </void>
+  <void property="root">
+   <object class="com.jformdesigner.model.FormRoot">
+    <void method="add">
+     <object class="com.jformdesigner.model.FormContainer">
+      <string>javax.swing.JPanel</string>
+      <object class="com.jformdesigner.model.FormLayoutManager">
+       <class>java.awt.BorderLayout</class>
+      </object>
+      <void method="setProperty">
+       <string>$sizePolicy</string>
+       <int>1</int>
+      </void>
+      <void property="name">
+       <string>this</string>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JPanel</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>java.awt.GridBagLayout</class>
+         <void method="setProperty">
+          <string>$columnSpecs</string>
+          <string>0:1.0</string>
+         </void>
+         <void method="setProperty">
+          <string>$rowSpecs</string>
+          <string>0:1.0</string>
+         </void>
+         <void method="setProperty">
+          <string>$alignTop</string>
+          <boolean>true</boolean>
+         </void>
+         <void method="setProperty">
+          <string>$alignLeft</string>
+          <boolean>true</boolean>
+         </void>
+        </object>
+        <void method="setProperty">
+         <string>border</string>
+         <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+        </void>
+        <void property="name">
+         <string>dialogPane</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JPanel</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>java.awt.GridBagLayout</class>
+           <void method="setProperty">
+            <string>$columnSpecs</string>
+            <string>0:1.0</string>
+           </void>
+           <void method="setProperty">
+            <string>$rowSpecs</string>
+            <string>0:1.0, 0</string>
+           </void>
+           <void method="setProperty">
+            <string>$hGap</string>
+            <int>5</int>
+           </void>
+           <void method="setProperty">
+            <string>$vGap</string>
+            <int>5</int>
+           </void>
+           <void method="setProperty">
+            <string>$alignLeft</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>$alignTop</string>
+            <boolean>true</boolean>
+           </void>
+          </object>
+          <void method="setProperty">
+           <string>border</string>
+           <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+          </void>
+          <void property="name">
+           <string>contentPanel</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JScrollPane</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>javax.swing.JScrollPane</class>
+            </object>
+            <void method="setProperty">
+             <string>viewportBorder</string>
+             <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+            </void>
+            <void method="setProperty">
+             <string>border</string>
+             <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+            </void>
+            <void property="name">
+             <string>imagePreviewScrollPane</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent" id="FormComponent0">
+              <string>com.ebstrada.formreturn.manager.ui.component.JImageLabel</string>
+              <void method="setProperty">
+               <string>horizontalAlignment</string>
+               <int>0</int>
+              </void>
+              <void property="name">
+               <string>imagePreviewLabel</string>
+              </void>
+              <void method="auxiliary">
+               <void method="setProperty">
+                <string>JavaCodeGenerator.postInitCode</string>
+                <string>imagePreviewLabel.setIpd(this);
+imagePreviewLabel.setRenderType(JImageLabel.RENDER_CAPTURED_IMAGE_PREVIEW);</string>
+               </void>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+           </object>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JPanel</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>java.awt.GridBagLayout</class>
+             <void method="setProperty">
+              <string>$columnSpecs</string>
+              <string>0:1.0, 0, 0:1.0</string>
+             </void>
+             <void method="setProperty">
+              <string>$rowSpecs</string>
+              <string>0, 0, 0</string>
+             </void>
+             <void method="setProperty">
+              <string>$hGap</string>
+              <int>5</int>
+             </void>
+             <void method="setProperty">
+              <string>$vGap</string>
+              <int>5</int>
+             </void>
+             <void method="setProperty">
+              <string>$alignLeft</string>
+              <boolean>true</boolean>
+             </void>
+             <void method="setProperty">
+              <string>$alignTop</string>
+              <boolean>true</boolean>
+             </void>
+            </object>
+            <void method="setProperty">
+             <string>opaque</string>
+             <boolean>false</boolean>
+            </void>
+            <void property="name">
+             <string>masterPanel</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>java.awt.GridBagLayout</class>
+               <void method="setProperty">
+                <string>$columnSpecs</string>
+                <string>0:1.0, 0, 0, 0, 0, 0:1.0</string>
+               </void>
+               <void method="setProperty">
+                <string>$rowSpecs</string>
+                <string>0</string>
+               </void>
+               <void method="setProperty">
+                <string>$hGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$vGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$alignLeft</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>$alignTop</string>
+                <boolean>true</boolean>
+               </void>
+              </object>
+              <void method="setProperty">
+               <string>opaque</string>
+               <boolean>false</boolean>
+              </void>
+              <void property="name">
+               <string>panel2</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent1">
+                <string>javax.swing.JComboBox</string>
+                <void method="setProperty">
+                 <string>model</string>
+                 <object class="javax.swing.DefaultComboBoxModel">
+                  <void property="selectedItem">
+                   <string>5%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>5%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>10%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>25%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>50%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>100%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>200%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>500%</string>
+                  </void>
+                  <void method="addElement">
+                   <string>1000%</string>
+                  </void>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>selectedIndex</string>
+                 <int>4</int>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>ComboBox.font</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>editable</string>
+                 <boolean>true</boolean>
+                </void>
+                <void property="name">
+                 <string>zoomBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>preferredSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>maximumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>minimumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ItemListener</string>
+                  <string>itemStateChanged</string>
+                  <string>zoomBoxItemStateChanged</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>1</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent2">
+                <string>javax.swing.JLabel</string>
+                <void method="setProperty">
+                 <string>icon</string>
+                 <object class="com.jformdesigner.model.SwingIcon">
+                  <int>0</int>
+                  <string>/com/ebstrada/formreturn/manager/ui/icons/preview/zoom_in.png</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>Label.font</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>zoomInLabel</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>toolTipText.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>zoomInLabel.setToolTipText(Localizer.localize(&quot;UI&quot;, &quot;ZoomInToolTip&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.MouseListener</string>
+                  <string>mouseClicked</string>
+                  <string>zoomInLabelMouseClicked</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>2</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent3">
+                <string>javax.swing.JLabel</string>
+                <void method="setProperty">
+                 <string>icon</string>
+                 <object class="com.jformdesigner.model.SwingIcon">
+                  <int>0</int>
+                  <string>/com/ebstrada/formreturn/manager/ui/icons/preview/zoom_out.png</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>Label.font</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>zoomOutLabel</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>preferredSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>maximumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>minimumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>zoomOutLabel.setToolTipText(Localizer.localize(&quot;UI&quot;, &quot;ZoomOutToolTip&quot;));</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>toolTipText.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.MouseListener</string>
+                  <string>mouseClicked</string>
+                  <string>zoomOutLabelMouseClicked</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>3</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent4">
+                <string>javax.swing.JCheckBox</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Zoom To Fit</string>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>CheckBox.font</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>focusPainted</string>
+                 <boolean>false</boolean>
+                </void>
+                <void property="name">
+                 <string>zoomToFitCheckBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>zoomToFitCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;ZoomToFitCheckBoxText&quot;));</string>
+                 </void>
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>javax.swing.event.ChangeListener</string>
+                  <string>stateChanged</string>
+                  <string>zoomToFitCheckBoxStateChanged</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>4</int>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+              <void method="setProperty">
+               <string>gridx</string>
+               <int>1</int>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>java.awt.GridBagLayout</class>
+               <void method="setProperty">
+                <string>$columnSpecs</string>
+                <string>0, 0, 0, 0</string>
+               </void>
+               <void method="setProperty">
+                <string>$rowSpecs</string>
+                <string>0</string>
+               </void>
+               <void method="setProperty">
+                <string>$hGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$vGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$alignLeft</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>$alignTop</string>
+                <boolean>true</boolean>
+               </void>
+              </object>
+              <void method="setProperty">
+               <string>opaque</string>
+               <boolean>false</boolean>
+              </void>
+              <void property="name">
+               <string>detectionPanel</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent5">
+                <string>javax.swing.JCheckBox</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Barcodes</string>
+                </void>
+                <void method="setProperty">
+                 <string>focusPainted</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont" id="SwingFont0">
+                  <string>CheckBox.font</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>selected</string>
+                 <boolean>true</boolean>
+                </void>
+                <void property="name">
+                 <string>drawDetectBarcodesCheckBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>drawDetectBarcodesCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;DrawDetectBarcodesCheckBox&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ActionListener</string>
+                  <string>actionPerformed</string>
+                  <string>drawDetectBarcodesCheckBoxActionPerformed</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent6">
+                <string>javax.swing.JCheckBox</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Segments</string>
+                </void>
+                <void method="setProperty">
+                 <string>focusPainted</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object idref="SwingFont0"/>
+                </void>
+                <void method="setProperty">
+                 <string>selected</string>
+                 <boolean>true</boolean>
+                </void>
+                <void property="name">
+                 <string>drawDetectSegmentsCheckBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>drawDetectSegmentsCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;DrawDetectSegmentsCheckBox&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ActionListener</string>
+                  <string>actionPerformed</string>
+                  <string>drawDetectSegmentsCheckBoxActionPerformed</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>1</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent7">
+                <string>javax.swing.JCheckBox</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Fragments</string>
+                </void>
+                <void method="setProperty">
+                 <string>focusPainted</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object idref="SwingFont0"/>
+                </void>
+                <void method="setProperty">
+                 <string>selected</string>
+                 <boolean>true</boolean>
+                </void>
+                <void property="name">
+                 <string>drawDetectFragmentsCheckBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>drawDetectFragmentsCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;DrawDetectFragmentsCheckBox&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ActionListener</string>
+                  <string>actionPerformed</string>
+                  <string>drawDetectFragmentsCheckBoxActionPerformed</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>2</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent8">
+                <string>javax.swing.JCheckBox</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Marks</string>
+                </void>
+                <void method="setProperty">
+                 <string>focusPainted</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object idref="SwingFont0"/>
+                </void>
+                <void method="setProperty">
+                 <string>selected</string>
+                 <boolean>true</boolean>
+                </void>
+                <void property="name">
+                 <string>drawDetectMarksCheckBox</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>drawDetectMarksCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;DrawDetectMarksCheckBox&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ActionListener</string>
+                  <string>actionPerformed</string>
+                  <string>drawDetectMarksCheckBoxActionPerformed</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>3</int>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+              <void method="setProperty">
+               <string>gridx</string>
+               <int>1</int>
+              </void>
+              <void method="setProperty">
+               <string>gridy</string>
+               <int>1</int>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>java.awt.GridBagLayout</class>
+               <void method="setProperty">
+                <string>$columnSpecs</string>
+                <string>0:1.0, 0, 10, 0, 0:1.0</string>
+               </void>
+               <void method="setProperty">
+                <string>$rowSpecs</string>
+                <string>0</string>
+               </void>
+               <void method="setProperty">
+                <string>$hGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$vGap</string>
+                <int>5</int>
+               </void>
+               <void method="setProperty">
+                <string>$alignLeft</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>$alignTop</string>
+                <boolean>true</boolean>
+               </void>
+              </object>
+              <void method="setProperty">
+               <string>opaque</string>
+               <boolean>false</boolean>
+              </void>
+              <void property="name">
+               <string>panel1</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent">
+                <string>javax.swing.JLabel</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>size</string>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>Label.font</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>imageFileSizeLabel</string>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>1</int>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent" id="FormComponent9">
+                <string>javax.swing.JButton</string>
+                <void method="setProperty">
+                 <string>text</string>
+                 <string>Save To Disk ...</string>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>Button.font</string>
+                 </object>
+                </void>
+                <void method="setProperty">
+                 <string>icon</string>
+                 <object class="com.jformdesigner.model.SwingIcon">
+                  <int>0</int>
+                  <string>/com/ebstrada/formreturn/manager/ui/icons/disk.png</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>saveToDiskButton</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>text.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>saveToDiskButton.setText(Localizer.localize(&quot;UI&quot;, &quot;SaveToDiskButtonText&quot;));</string>
+                 </void>
+                </void>
+                <void method="addEvent">
+                 <object class="com.jformdesigner.model.FormEvent">
+                  <string>java.awt.event.ActionListener</string>
+                  <string>actionPerformed</string>
+                  <string>saveToDiskButtonActionPerformed</string>
+                  <boolean>true</boolean>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridx</string>
+                 <int>3</int>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+              <void method="setProperty">
+               <string>gridx</string>
+               <int>1</int>
+              </void>
+              <void method="setProperty">
+               <string>gridy</string>
+               <int>2</int>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+            <void method="setProperty">
+             <string>gridy</string>
+             <int>1</int>
+            </void>
+           </object>
+          </void>
+         </object>
+         <object class="com.jformdesigner.model.FormLayoutConstraints">
+          <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+         </object>
+        </void>
+       </object>
+       <object class="com.jformdesigner.model.FormLayoutConstraints">
+        <class>java.lang.String</class>
+        <void method="setProperty">
+         <string>value</string>
+         <string>Center</string>
+        </void>
+       </object>
+      </void>
+     </object>
+     <object class="com.jformdesigner.model.FormLayoutConstraints">
+      <null/>
+      <void method="setProperty">
+       <string>location</string>
+       <object class="java.awt.Point">
+        <int>0</int>
+        <int>0</int>
+       </object>
+      </void>
+      <void method="setProperty">
+       <string>size</string>
+       <object class="java.awt.Dimension">
+        <int>685</int>
+        <int>580</int>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

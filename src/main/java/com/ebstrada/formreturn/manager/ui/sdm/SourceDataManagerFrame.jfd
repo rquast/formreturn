@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_65" class="java.beans.XMLDecoder">
+ <object class="com.jformdesigner.model.FormModel">
+  <void property="contentType">
+   <string>form/swing</string>
+  </void>
+  <void property="root">
+   <object class="com.jformdesigner.model.FormRoot">
+    <void method="add">
+     <object class="com.jformdesigner.model.FormContainer">
+      <string>javax.swing.JPanel</string>
+      <object class="com.jformdesigner.model.FormLayoutManager">
+       <class>java.awt.BorderLayout</class>
+      </object>
+      <void method="setProperty">
+       <string>visible</string>
+       <boolean>true</boolean>
+      </void>
+      <void method="setProperty">
+       <string>border</string>
+       <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+      </void>
+      <void property="name">
+       <string>this</string>
+      </void>
+      <void method="add">
+       <object class="com.jformdesigner.model.FormContainer">
+        <string>javax.swing.JTabbedPane</string>
+        <object class="com.jformdesigner.model.FormLayoutManager">
+         <class>javax.swing.JTabbedPane</class>
+        </object>
+        <void method="setProperty">
+         <string>font</string>
+         <object class="com.jformdesigner.model.SwingFont">
+          <string>TabbedPane.font</string>
+         </object>
+        </void>
+        <void method="addEvent">
+         <object class="com.jformdesigner.model.FormEvent">
+          <string>javax.swing.event.ChangeListener</string>
+          <string>stateChanged</string>
+          <string>SDMTabbedPaneStateChanged</string>
+          <boolean>true</boolean>
+         </object>
+        </void>
+        <void property="name">
+         <string>SDMTabbedPane</string>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JPanel</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>java.awt.BorderLayout</class>
+          </object>
+          <void method="setProperty">
+           <string>opaque</string>
+           <boolean>false</boolean>
+          </void>
+          <void method="addEvent">
+           <object class="com.jformdesigner.model.FormEvent">
+            <string>java.awt.event.ComponentListener</string>
+            <string>componentResized</string>
+            <string>tablesPanelComponentResized</string>
+            <boolean>true</boolean>
+           </object>
+          </void>
+          <void property="name">
+           <string>tablesPanel</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JSplitPane</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>javax.swing.JSplitPane</class>
+            </object>
+            <void method="setProperty">
+             <string>border</string>
+             <object class="com.jformdesigner.model.FormObject" field="NULL_VALUE"/>
+            </void>
+            <void method="setProperty">
+             <string>resizeWeight</string>
+             <double>0.7</double>
+            </void>
+            <void method="setProperty">
+             <string>opaque</string>
+             <boolean>false</boolean>
+            </void>
+            <void method="setProperty">
+             <string>dividerSize</string>
+             <int>9</int>
+            </void>
+            <void method="auxiliary">
+             <void method="setProperty">
+              <string>dividerLocation.noCode</string>
+              <boolean>true</boolean>
+             </void>
+             <void method="setProperty">
+              <string>lastDividerLocation.noCode</string>
+              <boolean>true</boolean>
+             </void>
+            </void>
+            <void property="name">
+             <string>tablesSplitPane</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JPanel</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>java.awt.GridBagLayout</class>
+               <void method="setProperty">
+                <string>$columnSpecs</string>
+                <string>0:1.0</string>
+               </void>
+               <void method="setProperty">
+                <string>$rowSpecs</string>
+                <string>0:1.0, 0</string>
+               </void>
+               <void method="setProperty">
+                <string>$alignLeft</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>$alignTop</string>
+                <boolean>true</boolean>
+               </void>
+              </object>
+              <void method="setProperty">
+               <string>opaque</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="auxiliary">
+               <void method="setProperty">
+                <string>minimumSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>preferredSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>maximumSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+              </void>
+              <void property="name">
+               <string>tableListPanel</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormContainer">
+                <string>javax.swing.JScrollPane</string>
+                <object class="com.jformdesigner.model.FormLayoutManager">
+                 <class>javax.swing.JScrollPane</class>
+                </object>
+                <void method="setProperty">
+                 <string>requestFocusEnabled</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>minimumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>maximumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>preferredSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                </void>
+                <void property="name">
+                 <string>scrollPane3</string>
+                </void>
+                <void method="add">
+                 <object class="com.jformdesigner.model.FormComponent">
+                  <string>javax.swing.JTable</string>
+                  <void method="setProperty">
+                   <string>requestFocusEnabled</string>
+                   <boolean>false</boolean>
+                  </void>
+                  <void method="setProperty">
+                   <string>showHorizontalLines</string>
+                   <boolean>false</boolean>
+                  </void>
+                  <void method="setProperty">
+                   <string>showVerticalLines</string>
+                   <boolean>false</boolean>
+                  </void>
+                  <void method="setProperty">
+                   <string>font</string>
+                   <object class="com.jformdesigner.model.SwingFont">
+                    <string>Table.font</string>
+                   </object>
+                  </void>
+                  <void property="name">
+                   <string>tablesTable</string>
+                  </void>
+                  <void method="auxiliary">
+                   <void method="setProperty">
+                    <string>maximumSize.noCode</string>
+                    <boolean>true</boolean>
+                   </void>
+                   <void method="setProperty">
+                    <string>minimumSize.noCode</string>
+                    <boolean>true</boolean>
+                   </void>
+                   <void method="setProperty">
+                    <string>preferredScrollableViewportSize.noCode</string>
+                    <boolean>true</boolean>
+                   </void>
+                   <void method="setProperty">
+                    <string>preferredSize.noCode</string>
+                    <boolean>true</boolean>
+                   </void>
+                   <void method="setProperty">
+                    <string>JavaCodeGenerator.postInitCode</string>
+                    <string>tablesTable.setShowGrid(false);
+tablesTable.getTableHeader().setFont(UIManager.getFont(&quot;TableHeader.font&quot;));</string>
+                   </void>
+                  </void>
+                 </object>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+               </object>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent">
+                <string>com.ebstrada.formreturn.manager.ui.component.TableFilterPanel</string>
+                <void property="name">
+                 <string>tablesTableFilterPanel</string>
+                </void>
+               </object>
+               <object class="com.jformdesigner.model.FormLayoutConstraints">
+                <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+                <void method="setProperty">
+                 <string>gridy</string>
+                 <int>1</int>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>java.lang.String</class>
+              <void method="setProperty">
+               <string>value</string>
+               <string>left</string>
+              </void>
+             </object>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormContainer">
+              <string>javax.swing.JScrollPane</string>
+              <object class="com.jformdesigner.model.FormLayoutManager">
+               <class>javax.swing.JScrollPane</class>
+              </object>
+              <void method="setProperty">
+               <string>requestFocusEnabled</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="auxiliary">
+               <void method="setProperty">
+                <string>minimumSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>maximumSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+               <void method="setProperty">
+                <string>preferredSize.noCode</string>
+                <boolean>true</boolean>
+               </void>
+              </void>
+              <void property="name">
+               <string>fieldsScrollPane</string>
+              </void>
+              <void method="add">
+               <object class="com.jformdesigner.model.FormComponent">
+                <string>javax.swing.JTable</string>
+                <void method="setProperty">
+                 <string>requestFocusEnabled</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>showHorizontalLines</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>showVerticalLines</string>
+                 <boolean>false</boolean>
+                </void>
+                <void method="setProperty">
+                 <string>font</string>
+                 <object class="com.jformdesigner.model.SwingFont">
+                  <string>Table.font</string>
+                 </object>
+                </void>
+                <void property="name">
+                 <string>fieldsTable</string>
+                </void>
+                <void method="auxiliary">
+                 <void method="setProperty">
+                  <string>preferredScrollableViewportSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>preferredSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>minimumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>maximumSize.noCode</string>
+                  <boolean>true</boolean>
+                 </void>
+                 <void method="setProperty">
+                  <string>JavaCodeGenerator.postInitCode</string>
+                  <string>fieldsTable.setShowGrid(false);
+fieldsTable.getTableHeader().setFont(UIManager.getFont(&quot;TableHeader.font&quot;));</string>
+                 </void>
+                </void>
+               </object>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>java.lang.String</class>
+              <void method="setProperty">
+               <string>value</string>
+               <string>right</string>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>java.lang.String</class>
+            <void method="setProperty">
+             <string>value</string>
+             <string>Center</string>
+            </void>
+           </object>
+          </void>
+         </object>
+         <object class="com.jformdesigner.model.FormLayoutConstraints">
+          <null/>
+          <void method="setProperty">
+           <string>title</string>
+           <string>Tables</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/one.png</string>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JPanel</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>java.awt.GridBagLayout</class>
+           <void method="setProperty">
+            <string>$columnSpecs</string>
+            <string>0:1.0</string>
+           </void>
+           <void method="setProperty">
+            <string>$rowSpecs</string>
+            <string>0:1.0, 0</string>
+           </void>
+           <void method="setProperty">
+            <string>$alignLeft</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>$alignTop</string>
+            <boolean>true</boolean>
+           </void>
+          </object>
+          <void method="setProperty">
+           <string>opaque</string>
+           <boolean>false</boolean>
+          </void>
+          <void property="name">
+           <string>recordsPanel</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JScrollPane</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>javax.swing.JScrollPane</class>
+            </object>
+            <void method="setProperty">
+             <string>requestFocusEnabled</string>
+             <boolean>false</boolean>
+            </void>
+            <void property="name">
+             <string>scrollPane1</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent">
+              <string>javax.swing.JTable</string>
+              <void method="setProperty">
+               <string>requestFocusEnabled</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="setProperty">
+               <string>showHorizontalLines</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="setProperty">
+               <string>showVerticalLines</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="setProperty">
+               <string>font</string>
+               <object class="com.jformdesigner.model.SwingFont">
+                <string>Table.font</string>
+               </object>
+              </void>
+              <void method="setProperty">
+               <string>cellSelectionEnabled</string>
+               <boolean>true</boolean>
+              </void>
+              <void property="name">
+               <string>recordsTable</string>
+              </void>
+              <void method="auxiliary">
+               <void method="setProperty">
+                <string>JavaCodeGenerator.postInitCode</string>
+                <string>recordsTable.setShowGrid(false);
+recordsTable.getTableHeader().setFont(UIManager.getFont(&quot;TableHeader.font&quot;));</string>
+               </void>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+           </object>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormComponent">
+            <string>com.ebstrada.formreturn.manager.ui.component.TableFilterPanel</string>
+            <void property="name">
+             <string>recordsTableFilterPanel</string>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+            <void method="setProperty">
+             <string>gridy</string>
+             <int>1</int>
+            </void>
+           </object>
+          </void>
+         </object>
+         <object class="com.jformdesigner.model.FormLayoutConstraints">
+          <null/>
+          <void method="setProperty">
+           <string>title</string>
+           <string>Records</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/two.png</string>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="com.jformdesigner.model.FormContainer">
+          <string>javax.swing.JPanel</string>
+          <object class="com.jformdesigner.model.FormLayoutManager">
+           <class>java.awt.GridBagLayout</class>
+           <void method="setProperty">
+            <string>$columnSpecs</string>
+            <string>0:1.0</string>
+           </void>
+           <void method="setProperty">
+            <string>$rowSpecs</string>
+            <string>0:1.0, 0</string>
+           </void>
+           <void method="setProperty">
+            <string>$alignLeft</string>
+            <boolean>true</boolean>
+           </void>
+           <void method="setProperty">
+            <string>$alignTop</string>
+            <boolean>true</boolean>
+           </void>
+          </object>
+          <void method="setProperty">
+           <string>opaque</string>
+           <boolean>false</boolean>
+          </void>
+          <void property="name">
+           <string>publicationsPanel</string>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JScrollPane</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>javax.swing.JScrollPane</class>
+            </object>
+            <void property="name">
+             <string>scrollPane4</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent">
+              <string>javax.swing.JTable</string>
+              <void method="setProperty">
+               <string>showHorizontalLines</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="setProperty">
+               <string>showVerticalLines</string>
+               <boolean>false</boolean>
+              </void>
+              <void method="setProperty">
+               <string>font</string>
+               <object class="com.jformdesigner.model.SwingFont">
+                <string>Table.font</string>
+               </object>
+              </void>
+              <void property="name">
+               <string>publicationsTable</string>
+              </void>
+              <void method="auxiliary">
+               <void method="setProperty">
+                <string>JavaCodeGenerator.postInitCode</string>
+                <string>publicationsTable.setShowGrid(false);
+publicationsTable.getTableHeader().setFont(UIManager.getFont(&quot;TableHeader.font&quot;));</string>
+               </void>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+           </object>
+          </void>
+          <void method="add">
+           <object class="com.jformdesigner.model.FormContainer">
+            <string>javax.swing.JPanel</string>
+            <object class="com.jformdesigner.model.FormLayoutManager">
+             <class>java.awt.BorderLayout</class>
+            </object>
+            <void method="setProperty">
+             <string>opaque</string>
+             <boolean>false</boolean>
+            </void>
+            <void property="name">
+             <string>panel1</string>
+            </void>
+            <void method="add">
+             <object class="com.jformdesigner.model.FormComponent">
+              <string>com.ebstrada.formreturn.manager.ui.component.TableFilterPanel</string>
+              <void property="name">
+               <string>publicationsTableFilterPanel</string>
+              </void>
+             </object>
+             <object class="com.jformdesigner.model.FormLayoutConstraints">
+              <class>java.lang.String</class>
+              <void method="setProperty">
+               <string>value</string>
+               <string>Center</string>
+              </void>
+             </object>
+            </void>
+           </object>
+           <object class="com.jformdesigner.model.FormLayoutConstraints">
+            <class>com.jformdesigner.runtime.GridBagConstraintsEx</class>
+            <void method="setProperty">
+             <string>gridy</string>
+             <int>1</int>
+            </void>
+           </object>
+          </void>
+         </object>
+         <object class="com.jformdesigner.model.FormLayoutConstraints">
+          <null/>
+          <void method="setProperty">
+           <string>title</string>
+           <string>Publications</string>
+          </void>
+          <void method="setProperty">
+           <string>icon</string>
+           <object class="com.jformdesigner.model.SwingIcon">
+            <int>0</int>
+            <string>/com/ebstrada/formreturn/manager/ui/icons/three.png</string>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+       <object class="com.jformdesigner.model.FormLayoutConstraints">
+        <class>java.lang.String</class>
+        <void method="setProperty">
+         <string>value</string>
+         <string>Center</string>
+        </void>
+       </object>
+      </void>
+     </object>
+     <object class="com.jformdesigner.model.FormLayoutConstraints">
+      <null/>
+      <void method="setProperty">
+       <string>location</string>
+       <object class="java.awt.Point">
+        <int>10</int>
+        <int>5</int>
+       </object>
+      </void>
+      <void method="setProperty">
+       <string>size</string>
+       <object class="java.awt.Dimension">
+        <int>1025</int>
+        <int>545</int>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

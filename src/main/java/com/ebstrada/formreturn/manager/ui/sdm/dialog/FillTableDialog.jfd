@@ -1,0 +1,210 @@
+JFDML JFormDesigner: "6.0.3.0.150" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"modalityType": enum java.awt.Dialog$ModalityType APPLICATION_MODAL
+			"defaultCloseOperation": 0
+			"$sizePolicy": 1
+			"title": "Fill Column"
+			auxiliary() {
+				"title.noCode": true
+				"JavaCodeGenerator.postInitCode": "setTitle(Localizer.localize(\"UI\", \"FillTableDialogTitle\"));"
+			}
+			addEvent( new FormEvent( "java.awt.event.WindowFocusListener", "windowGainedFocus", "thisWindowGainedFocus", true ) )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0:1.0"
+				"$rowSpecs": "0:1.0, 0"
+				"$alignTop": true
+				"$alignLeft": true
+			} ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0"
+					"$rowSpecs": "0, 0:1.0, 0"
+					"$hGap": 5
+					"$vGap": 5
+					"$alignLeft": true
+					"$alignTop": true
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0, 0, 0, 0:1.0"
+						"$rowSpecs": "0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "fillTableDescriptionPanel"
+						"border": new javax.swing.border.CompoundBorder( new javax.swing.border.MatteBorder( 0, 0, 3, 0, sfield java.awt.Color gray ), new javax.swing.border.EmptyBorder( 5, 5, 5, 5 ) )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "fillTableDescriptionLabel"
+							"text": "<html><body><strong>Fill From Selected Value</strong></body></html>"
+							"font": new com.jformdesigner.model.SwingFont( "Label.font" )
+							auxiliary() {
+								"JavaCodeGenerator.postInitCode": "fillTableDescriptionLabel.setText(\"<html><body><strong>\" + Localizer.localize(\"UI\", \"FillTableDescriptionLabel\") + \"</strong></body></html>\");"
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 1
+						} )
+						add( new FormComponent( "com.ebstrada.formreturn.manager.ui.component.JHelpLabel" ) {
+							name: "fillTableHelpLabel"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/help.png" )
+							"cursor": new java.awt.Cursor( 12 )
+							"font": new com.jformdesigner.model.SwingFont( "Label.font" )
+							auxiliary() {
+								"JavaCodeGenerator.postInitCode": "fillTableHelpLabel.setHelpGUID(\"source-data-fill-cells\");\nfillTableHelpLabel.setToolTipText(Localizer.localize(\"UI\", \"ClickHereForHelpToolTip\"));"
+								"toolTipText.noCode": true
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0, 10, 0:1.0"
+						"$rowSpecs": "center:0:1.0, center:0:1.0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "fillTypePanel"
+						"border": new javax.swing.border.CompoundBorder( new javax.swing.border.TitledBorder( "Fill Type" ), new javax.swing.border.EmptyBorder( 5, 5, 5, 5 ) )
+						"opaque": false
+						auxiliary() {
+							"border.noCode": true
+							"JavaCodeGenerator.postInitCode": "fillTypePanel.setBorder(new CompoundBorder(\n\tnew TitledBorder(Localizer.localize(\"UI\", \"FillTypePanel\")),\n\tnew EmptyBorder(5, 5, 5, 5)));"
+						}
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "seriesRadioButton"
+							"text": "Numeric Series"
+							"selected": true
+							"$buttonGroup": new FormReference( "fillTypeButtonGroup" )
+							"font": &SwingFont0 new com.jformdesigner.model.SwingFont( "RadioButton.font" )
+							"opaque": false
+							auxiliary() {
+								"text.noCode": true
+								"JavaCodeGenerator.postInitCode": "seriesRadioButton.setText(Localizer.localize(\"UI\", \"FillSeriesRadioButtonText\"));"
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+							"$columnSpecs": "0:1.0"
+							"$rowSpecs": "0"
+							"$hGap": 5
+							"$vGap": 5
+							"$alignLeft": true
+							"$alignTop": true
+						} ) {
+							name: "stepSizePanel"
+							"border": new javax.swing.border.CompoundBorder( new javax.swing.border.TitledBorder( "Step Size" ), &EmptyBorder0 new javax.swing.border.EmptyBorder( 5, 5, 5, 5 ) )
+							"opaque": false
+							auxiliary() {
+								"border.noCode": true
+								"JavaCodeGenerator.postInitCode": "stepSizePanel.setBorder(new CompoundBorder(\n\tnew TitledBorder(Localizer.localize(\"UI\", \"StepSizePanel\")),\n\tnew EmptyBorder(5, 5, 5, 5)));"
+							}
+							add( new FormComponent( "javax.swing.JSpinner" ) {
+								name: "stepSizeSpinner"
+								"font": &SwingFont1 new com.jformdesigner.model.SwingFont( "Spinner.font" )
+								"model": new javax.swing.SpinnerNumberModel( 1, 1, 1000, 1 )
+							}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridx": 2
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "duplicatesRadioButton"
+							"text": "Duplicates"
+							"$buttonGroup": new FormReference( "fillTypeButtonGroup" )
+							"font": #SwingFont0
+							"opaque": false
+							auxiliary() {
+								"text.noCode": true
+								"JavaCodeGenerator.postInitCode": "duplicatesRadioButton.setText(Localizer.localize(\"UI\", \"FillDuplicatesRadioButtonText\"));"
+							}
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+							"gridy": 1
+						} )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 1
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+						"$columnSpecs": "0:1.0"
+						"$rowSpecs": "0"
+						"$hGap": 5
+						"$vGap": 5
+						"$alignLeft": true
+						"$alignTop": true
+					} ) {
+						name: "cellsToFillPanel"
+						"border": new javax.swing.border.CompoundBorder( new javax.swing.border.TitledBorder( "Cells To Fill" ), #EmptyBorder0 )
+						"opaque": false
+						auxiliary() {
+							"border.noCode": true
+							"JavaCodeGenerator.postInitCode": "cellsToFillPanel.setBorder(new CompoundBorder(\n\tnew TitledBorder(Localizer.localize(\"UI\", \"CellsToFillPanel\")),\n\tnew EmptyBorder(5, 5, 5, 5)));"
+						}
+						add( new FormComponent( "javax.swing.JSpinner" ) {
+							name: "cellCountSpinner"
+							"font": #SwingFont1
+							"model": new javax.swing.SpinnerNumberModel( 1, 1, 10000, 1 )
+						}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridy": 2
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "fillButton"
+						"text": "Fill"
+						"font": &SwingFont2 new com.jformdesigner.model.SwingFont( "Button.font" )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/paintcan.png" )
+						auxiliary() {
+							"text.noCode": true
+							"JavaCodeGenerator.postInitCode": "fillButton.setText(Localizer.localize(\"UI\", \"FillButtonText\"));"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "fillButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+						"gridy": 0
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": "Cancel"
+						"font": #SwingFont2
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/com/ebstrada/formreturn/manager/ui/icons/cross.png" )
+						auxiliary() {
+							"text.noCode": true
+							"JavaCodeGenerator.postInitCode": "cancelButton.setText(Localizer.localize(\"UI\", \"CancelButtonText\"));"
+						}
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridy": 1
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 340, 335 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "fillTypeButtonGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 350 )
+		} )
+	}
+}

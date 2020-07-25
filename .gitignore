@@ -1,0 +1,9 @@
+target
+repository
+.idea
+*.iml
+*OpenJDK*tar.gz
+*OpenJDK*zip
+
+## appbundler is GPL licensed, do not include, use maven plugin instead
+appbundler-1.0ea.jar

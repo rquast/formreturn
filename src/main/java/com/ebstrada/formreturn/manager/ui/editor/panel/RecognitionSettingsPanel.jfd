@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_20" class="java.beans.XMLDecoder"> 
+ <object class="com.jformdesigner.model.FormModel"> 
+  <void property="contentType"> 
+   <string>form/swing</string> 
+  </void> 
+  <void property="root"> 
+   <object class="com.jformdesigner.model.FormRoot"> 
+    <void method="add"> 
+     <object class="com.jformdesigner.model.FormContainer"> 
+      <string>org.jdesktop.swingx.JXTaskPane</string> 
+      <object class="com.jformdesigner.model.FormLayoutManager"> 
+       <class>java.awt.GridBagLayout</class> 
+       <void method="setProperty"> 
+        <string>$columnSpecs</string> 
+        <string>0:1.0</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$rowSpecs</string> 
+        <string>center:0:1.0, center:0:1.0, center:0:1.0, center:0:1.0, center:0:1.0, center:19:1.0, center:0:1.0, center:0:1.0, center:0:1.0, center:0:1.0, center:0:1.0</string> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$hGap</string> 
+        <int>5</int> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$vGap</string> 
+        <int>5</int> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$alignLeft</string> 
+        <boolean>true</boolean> 
+       </void> 
+       <void method="setProperty"> 
+        <string>$alignTop</string> 
+        <boolean>true</boolean> 
+       </void> 
+      </object> 
+      <void method="setProperty"> 
+       <string>scrollOnExpand</string> 
+       <boolean>true</boolean> 
+      </void> 
+      <void method="setProperty"> 
+       <string>title</string> 
+       <string>Recognition</string> 
+      </void> 
+      <void method="auxiliary"> 
+       <void method="setProperty"> 
+        <string>title.noCode</string> 
+        <boolean>true</boolean> 
+       </void> 
+       <void method="setProperty"> 
+        <string>JavaCodeGenerator.postInitCode</string> 
+        <string>this.setTitle(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelTitle&quot;));</string> 
+       </void> 
+      </void> 
+      <void property="name"> 
+       <string>this</string> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Luminance:</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object id="SwingFont0" class="com.jformdesigner.model.SwingFont"> 
+          <string>Label.font</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>luminanceLabel</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>luminanceLabel.setText(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelLuminanceLabel&quot;));</string> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void method="setProperty"> 
+         <string>model</string> 
+         <object class="javax.swing.SpinnerNumberModel"> 
+          <int>200</int> 
+          <int>0</int> 
+          <int>255</int> 
+          <int>1</int> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object id="SwingFont1" class="com.jformdesigner.model.SwingFont"> 
+          <string>Spinner.font</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>luminanceThresholdSpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>1</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Mark Threshold:</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont0"/> 
+        </void> 
+        <void property="name"> 
+         <string>markThresholdLabel</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>markThresholdLabel.setText(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelMarkThresholdLabel&quot;));</string> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>2</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void method="setProperty"> 
+         <string>model</string> 
+         <object class="javax.swing.SpinnerNumberModel"> 
+          <int>40</int> 
+          <int>-10000</int> 
+          <int>10000</int> 
+          <int>1</int> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont1"/> 
+        </void> 
+        <void property="name"> 
+         <string>markThresholdSpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>3</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Fragment Padding:</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont0"/> 
+        </void> 
+        <void property="name"> 
+         <string>fragmentPaddingLabel</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>fragmentPaddingLabel.setText(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelFragmentPaddingLabel&quot;));</string> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>4</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void method="setProperty"> 
+         <string>model</string> 
+         <object class="javax.swing.SpinnerNumberModel"> 
+          <int>1</int> 
+          <int>0</int> 
+          <int>200</int> 
+          <int>1</int> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont1"/> 
+        </void> 
+        <void property="name"> 
+         <string>fragmentPaddingSpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>5</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JLabel</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Deskew Threshold:</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont0"/> 
+        </void> 
+        <void property="name"> 
+         <string>deskewThresholdLabel</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>deskewThresholdLabel.setText(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelDeskewThresholdLabel&quot;));</string> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>6</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JSpinner</string> 
+        <void method="setProperty"> 
+         <string>model</string> 
+         <object class="javax.swing.SpinnerNumberModel"> 
+          <double>1.05</double> 
+          <double>0.0</double> 
+          <double>90.0</double> 
+          <double>0.01</double> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont1"/> 
+        </void> 
+        <void property="name"> 
+         <string>deskewThresholdSpinner</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>7</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JCheckBox</string> 
+        <void method="setProperty"> 
+         <string>selected</string> 
+         <boolean>true</boolean> 
+        </void> 
+        <void method="setProperty"> 
+         <string>focusPainted</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void method="setProperty"> 
+         <string>opaque</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Perform Deskew</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object class="com.jformdesigner.model.SwingFont"> 
+          <string>CheckBox.font</string> 
+         </object> 
+        </void> 
+        <void property="name"> 
+         <string>performDeskewCheckBox</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>performDeskewCheckBox.setText(Localizer.localize(&quot;UI&quot;, &quot;RecognitionPanelPerformDeskewCheckBox&quot;));</string> 
+         </void> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>8</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Restore Defaults</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object id="SwingFont2" class="com.jformdesigner.model.SwingFont"> 
+          <string>Button.font</string> 
+         </object> 
+        </void> 
+        <void method="setProperty"> 
+         <string>focusPainted</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void property="name"> 
+         <string>defaultSettingsButton</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>defaultSettingsButton.setText(Localizer.localize(&quot;UI&quot;, &quot;RestoreDefaultsButtonText&quot;));</string> 
+         </void> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>defaultSettingsButtonActionPerformed</string> 
+          <boolean>true</boolean> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>9</int> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="com.jformdesigner.model.FormComponent"> 
+        <string>javax.swing.JButton</string> 
+        <void method="setProperty"> 
+         <string>text</string> 
+         <string>Apply Settings</string> 
+        </void> 
+        <void method="setProperty"> 
+         <string>font</string> 
+         <object idref="SwingFont2"/> 
+        </void> 
+        <void method="setProperty"> 
+         <string>focusPainted</string> 
+         <boolean>false</boolean> 
+        </void> 
+        <void property="name"> 
+         <string>applySettingsButton</string> 
+        </void> 
+        <void method="auxiliary"> 
+         <void method="setProperty"> 
+          <string>maximumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>minimumSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>preferredSize.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>text.noCode</string> 
+          <boolean>true</boolean> 
+         </void> 
+         <void method="setProperty"> 
+          <string>JavaCodeGenerator.postInitCode</string> 
+          <string>applySettingsButton.setText(Localizer.localize(&quot;UI&quot;, &quot;ApplySettingsButtonText&quot;));</string> 
+         </void> 
+        </void> 
+        <void method="addEvent"> 
+         <object class="com.jformdesigner.model.FormEvent"> 
+          <string>java.awt.event.ActionListener</string> 
+          <string>actionPerformed</string> 
+          <string>applySettingsButtonActionPerformed</string> 
+          <boolean>true</boolean> 
+         </object> 
+        </void> 
+       </object> 
+       <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+        <class>com.jformdesigner.runtime.GridBagConstraintsEx</class> 
+        <void method="setProperty"> 
+         <string>gridy</string> 
+         <int>10</int> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+     <object class="com.jformdesigner.model.FormLayoutConstraints"> 
+      <null/> 
+      <void method="setProperty"> 
+       <string>location</string> 
+       <object class="java.awt.Point"> 
+        <int>0</int> 
+        <int>0</int> 
+       </object> 
+      </void> 
+      <void method="setProperty"> 
+       <string>size</string> 
+       <object class="java.awt.Dimension"> 
+        <int>195</int> 
+        <int>330</int> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

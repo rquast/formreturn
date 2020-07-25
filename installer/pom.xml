@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ebstrada.formreturn</groupId>
+	<artifactId>formreturn-setup</artifactId>
+	<version>1.7.5</version>
+	<packaging>jar</packaging>
+
+	<name>FormReturn Installer</name>
+	<url>https://www.formreturn.com</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<installerMainClass>com.ebstrada.formreturn.installer.Main</installerMainClass>
+		<formReturnMainClass>com.ebstrada.formreturn.manager.ui.Main</formReturnMainClass>
+		<formReturnServerMainClass>com.ebstrada.formreturn.server.ServerGUI</formReturnServerMainClass>
+		<vendor>EB Strada Holdings Pty Ltd</vendor>
+		<copyright>Copyright (c) 2006-2020 EB Strada Holdings Pty Ltd. All Rights Reserved.</copyright>
+		<formReturnName>FormReturn</formReturnName>
+		<windowsVersion>1.7.5.0</windowsVersion>
+		<macJavaArchive>OpenJDK8U-jre_x64_mac_hotspot_8u262b10</macJavaArchive>
+		<macJava>jdk8u262-b10-jre</macJava>
+		<win32JavaArchive>OpenJDK8U-jre_x86-32_windows_hotspot_8u262b10</win32JavaArchive>
+		<win32Java>jdk8u262-b10-jre</win32Java>
+		<win64JavaArchive>OpenJDK8U-jre_x64_windows_hotspot_8u262b10</win64JavaArchive>
+		<win64Java>jdk8u262-b10-jre</win64Java>
+		<formReturnServerName>FormReturn Server</formReturnServerName>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jasig.maven</groupId>
+				<artifactId>maven-notice-plugin</artifactId>
+				<version>1.0.4</version>
+				<configuration>
+					<noticeTemplate>../etc/notice/NOTICE.template</noticeTemplate>
+					<licenseMapping>
+						<param>../etc/notice/license-mappings.xml</param>
+					</licenseMapping>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.akathist.maven.plugins.launch4j</groupId>
+				<artifactId>launch4j-maven-plugin</artifactId>
+				<version>1.5.2</version>
+				<executions>
+					<execution>
+						<id>l4j-formreturn</id>
+						<phase>package</phase>
+						<goals>
+							<goal>launch4j</goal>
+						</goals>
+						<configuration>
+							<headerType>gui</headerType>
+							<dontWrapJar>true</dontWrapJar>
+							<stayAlive>false</stayAlive>
+							<icon>${basedir}/icons/formreturn.ico</icon>
+							<outfile>${project.build.directory}/formreturn.exe</outfile>
+							<jar>lib/formreturn.jar</jar>
+							<jre>
+							  	<opts>
+									<opt>-Dsun.java2d.dpiaware=false</opt>
+								</opts>
+								<path>jre/</path>
+								<minVersion>1.6.0</minVersion>
+								<maxHeapSize>1024</maxHeapSize>
+							</jre>
+							<versionInfo>
+								<fileVersion>${windowsVersion}</fileVersion>
+								<txtFileVersion>${windowsVersion}</txtFileVersion>
+								<fileDescription>${formReturnName}</fileDescription>
+								<copyright>${copyright}</copyright>
+								<productVersion>${windowsVersion}</productVersion>
+								<txtProductVersion>${windowsVersion}</txtProductVersion>
+								<productName>${formReturnName}</productName>
+								<companyName>${vendor}</companyName>
+								<internalName>formreturn</internalName>
+								<originalFilename>formreturn.exe</originalFilename>
+							</versionInfo>
+						</configuration>
+					</execution>
+					<execution>
+						<id>l4j-formreturn-server</id>
+						<phase>package</phase>
+						<goals>
+							<goal>launch4j</goal>
+						</goals>
+						<configuration>
+							<headerType>gui</headerType>
+							<dontWrapJar>true</dontWrapJar>
+							<stayAlive>false</stayAlive>
+							<icon>${basedir}/icons/formreturn_server.ico</icon>
+							<outfile>${project.build.directory}/formreturn_server.exe</outfile>
+							<jar>lib/formreturn_server.jar</jar>
+							<jre>
+								<opts>
+									<opt>-Dsun.java2d.dpiaware=false</opt>
+								</opts>
+								<path>jre/</path>
+								<minVersion>1.6.0</minVersion>
+								<maxHeapSize>512</maxHeapSize>
+							</jre>
+							<singleInstance>
+								<mutexName>${formReturnServerName}</mutexName>
+							</singleInstance>
+							<versionInfo>
+								<fileVersion>${windowsVersion}</fileVersion>
+								<txtFileVersion>${windowsVersion}</txtFileVersion>
+								<fileDescription>${formReturnServerName}</fileDescription>
+								<copyright>${copyright}</copyright>
+								<productVersion>${windowsVersion}</productVersion>
+								<txtProductVersion>${windowsVersion}</txtProductVersion>
+								<productName>${formReturnServerName}</productName>
+								<companyName>${vendor}</companyName>
+								<internalName>formreturn server</internalName>
+								<originalFilename>formreturn_server.exe</originalFilename>
+							</versionInfo>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>uberjar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<finalName>formreturn_setup_${project.version}</finalName>
+							<appendAssemblyId>false</appendAssemblyId>
+							<descriptors>
+								<descriptor>src/assemble/incjar.xml</descriptor>
+							</descriptors>
+							<archive>
+								<manifest>
+									<mainClass>${installerMainClass}</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-antrun-plugin</artifactId>
+			    <dependencies>
+			    	<dependency>
+						<groupId>ant-contrib</groupId>
+						<artifactId>ant-contrib</artifactId>
+						<version>20020829</version>
+					</dependency>
+			    </dependencies>
+				<executions>
+					<execution>
+						<id>create-app-bundle</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								
+								<exec executable="tar" spawn="false">
+									<arg
+										line="zxvf ${basedir}/jre/${macJavaArchive}.tar.gz -C ${project.build.directory}" />
+								</exec>
+								
+								<exec executable="mv" spawn="false">
+									<arg
+										line="${project.build.directory}/${macJava}/Contents/Home ${project.build.directory}/${macJava}/Contents/jre" />
+								</exec>
+								
+								<mkdir dir="${project.build.directory}/${macJava}/Contents/Home" />
+								
+								<exec executable="mv" spawn="false">
+									<arg
+										line="${project.build.directory}/${macJava}/Contents/jre ${project.build.directory}/${macJava}/Contents/Home/" />
+								</exec>
+			
+								<mkdir dir="${project.build.directory}/app" />
+								<mkdir dir="${project.build.directory}/appbundle" />
+			
+								<unjar
+									src="${project.build.directory}/formreturn_setup_${project.version}.jar"
+									dest="${project.build.directory}/appbundle" />
+			
+								<taskdef name="bundleapp" classpath="${basedir}/osx/appbundler-1.0ea.jar"
+									classname="com.oracle.appbundler.AppBundlerTask" />
+			
+								<path id="compile.classpath">
+									<fileset dir="${project.build.directory}/appbundle/lib">
+										<include name="**/*" />
+									</fileset>
+								</path>
+			
+								<bundleapp classpathref="compile.classpath"
+									outputdirectory="${project.build.directory}/app" name="${formReturnName}"
+									displayname="${formReturnName}" executableName="${formReturnName}"
+									identifier="com.ebstrada.formreturn.manager" shortversion="${project.version}"
+									version="${project.version}" icon="${basedir}/icons/formreturn.icns"
+									mainclassname="${formReturnMainClass}" copyright="${copyright}"
+									applicationCategory="public.app-category.productivity">
+			
+									<runtime dir="${project.build.directory}/${macJava}/Contents/Home" />
+			
+									<arch name="x86_64" />
+			
+									<bundledocument extensions="frf,frmf"
+										icon="${basedir}/icons/formreturn_frf.icns" name="${formReturnName} Form"
+										role="editor">
+									</bundledocument>
+			
+									<bundledocument extensions="frs, frms"
+										icon="${basedir}/icons/formreturn_frs.icns" name="${formReturnName} Segment"
+										role="editor">
+									</bundledocument>
+			
+									<!-- Workaround since the icon parameter for bundleapp doesn't work -->
+									<option value="-Xdock:icon=Contents/Resources/formreturn.icns" />
+			
+									<option value="-Dapple.laf.useScreenMenuBar=true" />
+									<option value="-Dcom.apple.macos.use-file-dialog-packages=true" />
+									<option value="-Dcom.apple.macos.useScreenMenuBar=true" />
+									<option value="-Dapple.awt.application.name=${formReturnName}" />
+									<option
+										value="-Dcom.apple.mrj.application.apple.menu.about.name=${formReturnName}" />
+									<option value="-Dcom.apple.smallTabs=true" />
+									<option value="-Dfile.encoding=UTF-8" />
+			
+									<option value="-Xmx1024M" name="Xmx" />
+								</bundleapp>
+			
+								<bundleapp classpathref="compile.classpath"
+									outputdirectory="${project.build.directory}/app/FormReturn.app/Contents/Resources"
+									name="${formReturnServerName}" displayname="${formReturnServerName}"
+									executableName="${formReturnServerName}" identifier="com.ebstrada.formreturn.server"
+									shortversion="${project.version}" version="${project.version}"
+									icon="${basedir}/icons/formreturn_server.icns" mainclassname="${formReturnServerMainClass}"
+									copyright="${copyright}" applicationCategory="public.app-category.productivity">
+			
+									<runtime dir="${project.build.directory}/${macJava}/Contents/Home" />
+			
+									<arch name="x86_64" />
+			
+									<!-- Workaround since the icon parameter for bundleapp doesn't work -->
+									<option value="-Xdock:icon=Contents/Resources/formreturn_server.icns" />
+			
+									<option value="-Dapple.laf.useScreenMenuBar=true" />
+									<option value="-Dcom.apple.macos.use-file-dialog-packages=true" />
+									<option value="-Dcom.apple.macos.useScreenMenuBar=true" />
+									<option value="-Dapple.awt.application.name=${formReturnServerName}" />
+									<option
+										value="-Dcom.apple.mrj.application.apple.menu.about.name=${formReturnServerName}" />
+									<option value="-Dcom.apple.smallTabs=true" />
+									<option value="-Dfile.encoding=UTF-8" />
+			
+									<option value="-Xmx512M" name="Xmx" />
+								</bundleapp>
+			
+								<delete
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/Resources/${formReturnServerName}.app/Contents/Java" />
+								<delete
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/Resources/${formReturnServerName}.app/Contents/PlugIns/${macJava}" />
+			
+								<exec executable="cp" spawn="false">
+									<arg
+										line="-p ${basedir}/osx/jsonscan ${project.build.directory}/app/${formReturnName}.app/Contents/Resources" />
+								</exec>
+			
+								<exec
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/Resources/${formReturnServerName}.app/Contents/PlugIns"
+									executable="ln" spawn="false">
+									<arg line="-s ../../../../PlugIns/${macJava}" />
+								</exec>
+			
+								<exec
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/Resources/${formReturnServerName}.app/Contents"
+									executable="ln" spawn="false">
+									<arg line="-s ../../../Java" />
+								</exec>
+
+							</tasks>
+						</configuration>
+					</execution>
+					<execution>
+						<id>update-app-bundle-into-uberjar</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<path id="compile.classpath">
+									<fileset dir="${project.build.directory}/appbundle/lib">
+										<include name="**/*" />
+									</fileset>
+								</path>
+								<pathconvert property="mf.classpath" pathsep=" ">
+									<path refid="compile.classpath" />
+									<flattenmapper />
+								</pathconvert>
+								<jar jarfile="${project.build.directory}/appbundle/lib/formreturn_server.jar">
+									<manifest>
+										<attribute name="Main-Class" value="${formReturnServerMainClass}" />
+										<attribute name="Class-Path" value="${mf.classpath}" />
+									</manifest>
+								</jar>
+								<jar jarfile="${project.build.directory}/formreturn_setup_${project.version}.jar" update="true">
+									<fileset dir="${project.build.directory}/appbundle">
+										<include name="lib/formreturn_server.jar" />
+									</fileset>
+								</jar>
+							</tasks>
+						</configuration>
+					</execution>
+					<execution>
+						<id>create-a-windows-signed-nsis-installer</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+							
+								<exec executable="unzip" spawn="false">
+									<arg
+										line="${basedir}/jre/${win32JavaArchive}.zip -d ${project.build.directory}" />
+								</exec>
+
+								<move todir="${project.build.directory}/jre">
+									<fileset dir="${project.build.directory}/${win32Java}" />
+								</move>
+						
+								<exec executable="C:\Program Files (x86)\NSIS\makensis.exe" osfamily="winnt">
+									<arg value="${basedir}/setup.nsi" />
+								</exec>
+						
+								<exec executable="/usr/bin/makensis" osfamily="unix">
+									<arg value="${basedir}/setup.nsi" />
+								</exec>
+
+								<copy file="${basedir}/setup_unsigned.exe" tofile="${project.build.directory}/formreturn_setup_${project.version}.exe" />
+
+								<delete file="${basedir}/setup_unsigned.exe" />
+							</tasks>
+						</configuration>
+					</execution>					
+					<execution>
+						<id>create-mac-pack</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<taskdef resource="net/sf/antcontrib/antcontrib.properties"
+									classpathref="maven.plugin.classpath" />
+
+								<exec
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/PlugIns/${macJava}/Contents/MacOS"
+									executable="rm" spawn="false">
+									<arg line="-f libjli.dylib" />
+								</exec>
+
+								<exec
+									dir="${project.build.directory}/app/${formReturnName}.app/Contents/PlugIns/${macJava}/Contents/MacOS"
+									executable="cp" spawn="false">
+									<arg line="-a ../Home/jre/lib/jli/libjli.dylib ." />
+								</exec>
+							</tasks>
+						</configuration>
+					</execution>
+			    </executions>
+			</plugin>
+			<!-- TODO: use this instead of requiring appbundler-1.0ea.jar
+			<plugin>
+				<groupId>com.evolvedbinary.appbundler</groupId>
+				<artifactId>appbundler-maven-plugin</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>bundle-my-mac-app</id>
+						<phase>package</phase>
+						<goals>
+							<goal>bundle</goal>
+						</goals>
+						<configuration>
+							<displayName>Your-App-Name</displayName>
+							<identifier>com.your.app.Main</identifier>
+							<mainClassName>com.your.app.Main</mainClassName>
+							<jvmRequired>1.8</jvmRequired>
+							<version>${project.version}</version>
+							<shortVersion>${project.version}</shortVersion>
+							<icon>icon.icns</icon>
+							<copyright>${project.inceptionYear} Your Name</copyright>
+							<applicationCategory>public.app-category.developer-tools</applicationCategory>
+							<additionalResourcePaths>
+								<fileSet>
+									<directory>${project.basedir}/src/main/config</directory>
+									<outputDirectory>etc</outputDirectory>
+								</fileSet>
+							</additionalResourcePaths>
+							<options>
+								<option>-Xms128m</option>
+								<option>-Dfile.encoding=UTF-8</option>
+								<option>-Xdock:name=Your-App-Name</option>
+							</options>
+							<explicitClassPath>false</explicitClassPath>
+							<isDebug>true</isDebug>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			-->
+		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[2.0,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<configLocation>checkstyle_config.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>2.4.0</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ebstrada.formreturn</groupId>
+			<artifactId>formreturn</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+	
+</project>
