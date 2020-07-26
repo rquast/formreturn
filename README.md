@@ -7,7 +7,7 @@ Download the latest release from: [https://github.com/rquast/formreturn/releases
 ### Releases
 Releases prior to version 1.7.5 were released under a closed-source license and can be downloaded from [https://releases.formreturn.com/](https://releases.formreturn.com/). If you purchased a license and require a license key to unlock older versions, download the license generator from [https://github.com/rquast/formreturn-license](https://github.com/rquast/formreturn-license). From 1.7.5 onward, open source contributions can be made by creating a pull request. Contribution guidelines will be drafted shortly.
 
-## Code Signing Issues
+### Code Signing Issues
 Open source releases are not codesigned. 
 
 If you're using a Mac, you will need to download, extract and right-click the application file and select "open" to run. This will bypass gatekeeper. 
