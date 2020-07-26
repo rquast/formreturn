@@ -2,7 +2,7 @@
 Optical Mark Recognition Made Simple
 
 ## Releases
-Releases prior to version 1.7.5 were released under a closed-source license.
+Releases prior to version 1.7.5 were released under a closed-source license. From 1.7.5 onward, open source contributions can be made by creating a pull request. Contribution guidelines will be drafted shortly.
 
 ## Building
 
