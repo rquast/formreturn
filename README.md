@@ -46,9 +46,11 @@ To build, from the root of the project, run:
 ```
 mvn clean install
 ```
+This will build the formreturn library that is then installed in your local maven repository.
 
 To create a package distribution, from the "installer" directory, run:
 ```
 mvn clean package
 ```
+In the "installer/target" directory, this will create a Mac "app", a windows exe installer and a Linux jar installer.
 
