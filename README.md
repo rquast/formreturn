@@ -6,6 +6,9 @@ Releases prior to version 1.7.5 were released under a closed-source license and 
 
 Download the latest release from: [https://github.com/rquast/formreturn/releases](https://github.com/rquast/formreturn/releases)
 
+## Installing/Running
+If you're using a mac, the software isn't codesigned anymore and requires you to download and right-click the application file to run (select "open"). This will bypass gatekeeper. If you're using windows, you will get a message saying that the software is from an unknown publisher.
+
 ## Tutorials
 Tutorials for using FormReturn can be found at [http://content.formreturn.com/](http://content.formreturn.com/)
 
