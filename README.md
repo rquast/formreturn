@@ -2,7 +2,10 @@
 Optical Mark Recognition Made Simple
 
 ## Releases
-Releases prior to version 1.7.5 were released under a closed-source license. From 1.7.5 onward, open source contributions can be made by creating a pull request. Contribution guidelines will be drafted shortly.
+Releases prior to version 1.7.5 were released under a closed-source license and can be downloaded from [https://releases.formreturn.com/](https://releases.formreturn.com/). From 1.7.5 onward, open source contributions can be made by creating a pull request. Contribution guidelines will be drafted shortly.
+
+## Tutorials
+Tutorials for using FormReturn can be found at [http://content.formreturn.com/](http://content.formreturn.com/)
 
 ## Building
 
@@ -20,3 +23,7 @@ To switch to Java 1.8, execute the following command in a terminal:
 ```
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
+
+### Maven repository
+
+Some FormReturn dependencies are no longer hosted by the maven central repository, and are configured to be obtained from [http://maven.formreturn.com/](http://maven.formreturn.com/)
