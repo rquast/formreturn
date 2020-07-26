@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="logo" src="https://raw.githubusercontent.com/rquast/formreturn/master/etc/media/splashscreen.svg">
+</p>
+
 # FormReturn
 Optical Mark Recognition Made Simple
 
